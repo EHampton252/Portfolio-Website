@@ -1,8 +1,12 @@
+import './sectionStyles.css'
+
 const Hobbies = () => {
 	return (
 		<>
-			<h2>Hobbies</h2>
-			<p>My hobbies are BJJ, lifting, reading, traveling, and video games.</p>
+			<div className='hobbies-card section-card'>
+				<h2>Hobbies</h2>
+				<p>My hobbies are BJJ, lifting weights, reading, chess, exploring new places, and pickleball.</p>
+			</div>
 		</>
 	)
 }

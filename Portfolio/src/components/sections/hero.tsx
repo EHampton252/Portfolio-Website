@@ -6,7 +6,8 @@ const Hero = () => {
 		<>
 			<h1>Hello!</h1>
 			<h2>My name is Ethan</h2>
-			<p>This is the hero section.</p>
+			<p>and welcome to my page!</p>
+			<p>Here you can find interesting facts about me, some of my current goals, and past experiences.</p>
 		</>
 	)
 }

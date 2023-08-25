@@ -1,3 +1,5 @@
+import './sectionStyles.css'
+
 const Contact = () => {
 	return (
 		<>
