@@ -3,8 +3,8 @@ import './sectionStyles.css'
 const Goals = () => {
 	return (
 		<>
-			<div className='goals-card section-card'>
-				<h2>Goals</h2>
+			<div id="goals" className='goals-card section-card'>
+				<h2 >Goals</h2>
 				<ul>
 					<li>Continue building my skills in React through building this Portfolio</li>
 					<li>Practice using C# and Linq in client projects</li>

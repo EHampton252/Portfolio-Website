@@ -11,34 +11,13 @@ import React from 'react'
 const NavBar = () => {
 	return (
 		<>
-			<Router>
-				<nav>
-					<ul className='nav-bar'>
-						<li>
-							<Link to='#home'>Home</Link>
-						</li>
-						<li>
-							<Link to='#goals'>Goals</Link>
-						</li>
-						<li>
-							<Link to='#hobbies'>Hobbies</Link>
-						</li>
-						<li>
-							<Link to='#experience'>Experience</Link>
-						</li>
-						<li>
-							<Link to='#contact'>Contact</Link>
-						</li>
-					</ul>
-				</nav>
-				<Routes>
-					<Route path='/' element={<Hero />} />
-					<Route path='/goals' element={<Goals />} />
-					<Route path='/hobbies' element={<Hobbies />} />
-					<Route path='/experience' element={<Experience />} />
-					<Route path='/contact' element={<Contact />} />
-				</Routes>
-			</Router>
+			<div className='nav-bar'>
+				<a href="#hero">Home</a>
+				<a href="#goals">Goals</a>
+				<a href="#experience">Experience</a>
+				<a href="#hobbies">Hobbies</a>
+				<a href="#contact">Contact</a>
+			</div>
 		</>
 	)
 }
