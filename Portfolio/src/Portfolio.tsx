@@ -1,11 +1,8 @@
-import NavBar from './navigation/navbar/navbar'
-import './Portfolio.css'
-import About from './sections/about-me'
-import Contact from './sections/contact'
-import Experience from './sections/experience'
-import Goals from './sections/goals'
-import Hero from './sections/hero'
-import Hobbies from './sections/hobbies'
+import NavBar from './components/navigation/navbar/navbar'
+import './index.css'
+import About from './components/sections/about-me'
+import Experience from './components/sections/experience'
+import Hero from './components/sections/hero'
 
 const Portfolio = () => {
 	return (
@@ -13,10 +10,7 @@ const Portfolio = () => {
 			<NavBar />
 			<Hero />
 			<About />
-			{/* <Goals /> */}
-			<Hobbies />
 			<Experience />
-			<Contact />
 		</>
 	)
 }
