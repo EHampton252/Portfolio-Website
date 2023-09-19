@@ -6,6 +6,7 @@ h1 {
 }
 
 h2 {
+    grid-area: row-header-start / header-col-start / row-text-start / header-col-end;
     font-size: 2.5em;
     font-weight: 600;
     line-height: 1.5;
@@ -34,8 +35,9 @@ ul {
 }
 
 .section-card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: [image] 2fr 2fr [header-col-start] 3fr [header-col-end] 0.25fr;
+    grid-template-rows: [row-header-start] 1fr [row-text-start] 1fr [row-text-end];
     align-items: center;
     justify-content: center;
     padding: 2em;
