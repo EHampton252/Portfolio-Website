@@ -15,10 +15,20 @@ h2 {
 }
 
 p {
+    grid-area: row-text-start / header-col-start / row-text-end / header-col-end;
     font-size: 1.2em;
     line-height: 1.5;
     margin: 0;
-    padding: 0;
+}
+
+.about-me-content {
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.experience-content {
+    padding-left: 1rem;
+    text-align: left;
 }
 
 a {
@@ -36,8 +46,8 @@ ul {
 
 .section-card {
     display: grid;
-    grid-template-columns: [image] 2fr 2fr [header-col-start] 3fr [header-col-end] 0.25fr;
-    grid-template-rows: [row-header-start] 1fr [row-text-start] 1fr [row-text-end];
+    grid-template-columns: [image] 23rem 23rem [header-col-start] 30rem [header-col-end];
+    grid-template-rows: [row-header-start] 23rem [row-text-start] 23rem [row-text-end];
     align-items: center;
     justify-content: center;
     padding: 2em;
