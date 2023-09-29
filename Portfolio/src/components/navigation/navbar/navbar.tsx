@@ -1,13 +1,35 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, createBrowserRouter } from 'react-router-dom'
 import Experience from '../../sections/experience'
-import Hobbies from '../../../pages/personalPage'
+import Hobbies from '../../../pages/hobbiesPage'
 import Goals from '../../sections/goals'
 import ReactDOM from 'react-dom/client'
 import Hero from '../../sections/hero'
 import './navbarStyles.css'
 import React from 'react'
+import Home from '../../../pages/home'
 
 const NavBar = () => {
+	const router = createBrowserRouter([
+		{
+			path: '/',
+			element: <Home />,
+			children: [
+				{
+					path: 'hobbies',
+					element: <Hobbies />,
+				},
+				{
+					path: 'experience',
+					element: <Experience />,
+				},
+				{
+					path: 'goals',
+					element: <Goals />,
+				},
+			],
+		},
+	])
+
 	return (
 		<>
 			<div className='nav-bar'>
