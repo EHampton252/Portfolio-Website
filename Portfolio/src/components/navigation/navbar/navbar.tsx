@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Experience from '../../sections/experience'
-import Hobbies from '../../../pages/hobbies'
+import Hobbies from '../../../pages/personalPage'
 import Goals from '../../sections/goals'
 import ReactDOM from 'react-dom/client'
 import Hero from '../../sections/hero'
