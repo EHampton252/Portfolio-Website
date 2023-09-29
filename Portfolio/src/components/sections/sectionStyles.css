@@ -1,7 +1,57 @@
-.p {
-    font-size: 1.2em;
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    grid-area: row-header-start / header-col-start / row-text-start / header-col-end;
+    font-size: 2.5em;
+    font-weight: 600;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    color: #5899E2;
+}
+
+p {
+    grid-area: row-text-start / header-col-start / row-text-end / header-col-end;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.about-me-content {
+    padding-left: 1rem;
+    text-align: left;
+}
+
+.experience-content {
+    padding-left: 1rem;
+    text-align: left;
+}
+
+a {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-card {
+    display: grid;
+    grid-template-columns: [image] 23rem 23rem [header-col-start] 30rem [header-col-end];
+    grid-template-rows: [row-header-start] 23rem [row-text-start] 23rem [row-text-end];
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    margin-top: 2em;
+    background-color: #F9F9F9;
+    border-radius: 1rem;
 }
